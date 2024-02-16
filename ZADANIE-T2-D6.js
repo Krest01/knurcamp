@@ -114,7 +114,7 @@ uzasadnienie(`a dlaczego by miało? po prostu go nie opóźnia ale to nie znaczy
     Co wyświetli się w przeglądarce po wykonaniu tego kodu?
     Wpisz rozwiązanie poniżej jako tekst w cudzysłowie.
 */
-odpowiedź("str");
+odpowiedź("abc");
 uzasadnienie(`str bo to jego nadpisanie tej zmiennej dzieje się po przypisaniu jej wartości do diva`);
 
 /*
@@ -223,7 +223,7 @@ uzasadnienie(`event listener nasłuchuje wydarzenia które ustalimy i wykonuje k
 
     Wpisz rozwiązanie poniżej jako tekst w cudzysłowie.
 */
-odpowiedź("serwer blokuje zapytania");
+odpowiedź("CORS");
 uzasadnienie(`bardzo możliwe że serwer do którego próbujemy otrzymać dostęp blokuje naszą aplikację lecz nie wyszukiwarkę`);
 
 // ### KONIEC MIEJSCA NA TWÓJ KOD ###
