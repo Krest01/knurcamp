@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+    <div id="dupa">
+        <p id="wdupie">Historia szkolnej</p>
+        <img id="obrazek">
+        <button id="butt">Poznaj szkolną</button>
+        <audio id="dzwiek"></audio>
+    </div>
+  <script>
+    let i = 0;
+    const obrazki = ["konon.jpg", "major.jpg", "nitro.jpg", "major2.jpg"];
+    const teksciory = ["Mleczny człowiek", "Światowy człowiek", "Leśne nitro","Stało się to co się miać, stało się miać"];
+    const dzwieki = ["mleczny-czlowiek.mp3", "major.mp3", "nitro.mp3","stalo-sie.mp3"];
+    const lenghtObrazki = obrazki.length;
+
+    function kanYEW(){
+
+    }
+
+    function cauosc(){
+      if (i < lenghtObrazki - 1){
+        document.getElementById("butt").innerText = "Poznaj szkolną"
+        document.getElementById("obrazek").setAttribute("src", `/dupneobrazki/${obrazki[i]}`);
+        document.getElementById("dzwiek").setAttribute("src", `/dupnedźwięki/${dzwieki[i]}`);
+        document.getElementById("dzwiek").play();
+        i++;
+      }
+      else{
+        document.getElementById("obrazek").setAttribute("src", `/dupneobrazki/${obrazki[i]}`);
+        document.getElementById("dzwiek").setAttribute("src", `/dupnedźwięki/${dzwieki[i]}`);
+        document.getElementById("dzwiek").play();
+        document.getElementById("butt").innerText = "Od nowa";
+        i=0;
+      }
+    }
+    document.getElementById("butt").addEventListener("click", cauosc);
+  </script>
+</body>
+</html>

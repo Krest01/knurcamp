@@ -110,7 +110,7 @@ uzasadnienie(`const od słowa constant - stała`);
     Jaki będzie jego wynik w konsoli?
     Wprowadź odpowiedź jako teskt w cudzysłowie.
 */
-odpowiedź(undefined);
+odpowiedź("undefined");
 uzasadnienie(`nie zwracamy nic z funkcji`);
 
 /*
